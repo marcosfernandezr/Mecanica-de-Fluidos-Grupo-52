@@ -1,0 +1,120 @@
+#viscosidad:hover path{
+    cursor: pointer;
+    fill: #e4ff2a ;
+  }
+
+#fotos{
+    margin: 0 auto;
+}
+
+.container-fluid padding{
+    margin-top: 1em;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+
+#experimenta{
+    margin-left: 70%;
+}
+
+#uwu1:hover{
+    opacity: 0.6;
+    cursor: pointer;
+
+}
+
+#uwu2:hover{
+    opacity: 0.6;
+    cursor: pointer;
+
+}
+
+#uwu3:hover{
+    opacity: 0.6;
+    cursor: pointer;
+
+}
+
+#uwu4:hover{
+    opacity: 0.6;
+    cursor: pointer;
+
+}
+
+#c1pag{
+    display: none;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+
+#titulo2{
+    margin-top: 5%;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+#titulo3{
+    margin-top: 5%;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+
+#circulos{
+    margin-top: 8%;
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+#circulos:hover{
+    cursor: pointer;
+}
+
+#c1pagina{
+    display: none;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+
+#c2pagina{
+    display: none;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+
+#c3pagina{
+    display: none;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+
+#c4pagina{
+    display: none;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+
+#materiales{
+    border:1px solid black;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+
+#exfoto{
+    margin-top:10%;
+    animation-name: modalopen;
+	animation-duration: 1s
+}
+
+#procedimiento{
+    background-color:#373736;
+    color: white;
+    animation-name: modalopen;
+    animation-duration: 1s;
+    margin-top:1rem
+}
+
+#extx1{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+

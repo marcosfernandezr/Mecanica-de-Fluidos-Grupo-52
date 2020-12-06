@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mecánica de Fluidos: Grupo 52</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link href="a.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+	
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="utils.js"></script>
+    <script src="grid.js"></script>
+    <script src="ui.js"></script>
+    <script src="simulator.js"></script>
+	<script src="fluids.js"></script>
+	<script src="migrafico.js"></script>
+	<script src="uwu.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"><img width=" 20%" src="img/logo.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+	data-target="#navbarResponsive">
+	<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+	<ul class="navbar-nav ml-auto">
+		<li class="nav-item active">
+			<a class="nav-link" href="index.html">Home </a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="equipo.html">Equipo</a>
+		</li>
+		<li class="nav-item ">
+			<a class="nav-link" href="experimenta.html">Experimenta </a>
+		</li>
+		<li class="nav-item ">
+			<a class="nav-link" href="rubro.html">Rubro Industrial </a>
+		</li>
+		<li class="nav-item ">
+			<a class="nav-link" href="referencias.html">Referencias </a>
+		</li>
+	</ul>
+</div>
+</nav>
+
+
+<!--- Image Slider -->
+<div id="paginaprincipal">
+<div id="slides" class="carousel slide" data-ride="carousel">
+
+<ul class="carousel-indicators">
+	<li data-target="#slides" data-slide-to="0" class="active"></li>
+	<li data-target="#slides" data-slide-to="1"></li>
+	<li data-target="#slides" data-slide-to="2"></li>
+</ul>
+
+<div class="carousel-inner">
+	<div class="carousel-item active" >
+		<img src="img/background2.png" >
+	</div>
+	<div class="carousel-item">
+		<img src="img/background.png">
+	</div>
+	<div class="carousel-item">
+		<img src="img/background3.png">
+	</div>
+	<div class="carousel-caption">
+		<h3 class="display-4"> Uso de fluidos</h3>
+		<h1 class="display-1"> No Newtonianos</h1>
+		<button id="bt1" type="button" onclick="aparecer1()" class="btn btn-primary btn-lg"> !Experimenta!</button>
+	</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="container-fluid padding" id="pagina2">
+	<div class="container">
+	<h5 class="display-25"> Fluidos no newtonianos</h5>
+	<h8 class="display-30"> Ecuación general</h8>
+	<br>
+	<br>
+
+	<a id="experimenta" class="btn btn-primary btn-sm" href="experimenta.html">¡Experimenta! </a>
+	
+	<div class="container-fluid" id="ec">
+		<svg id="Layer_1" width="100%" heigth="100%" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 611.97 196.88"><defs><style>.cls-1{fill:#050606;}.cls-2{fill:#020203;}.cls-3{fill:#020303;}.cls-4{fill:#030404;}.cls-5{fill:#040404;}.cls-6{fill:#040405;}.cls-7{fill:#090a0a;}.cls-8{fill:#fefefe;}.cls-9{fill:#fffeff;}.cls-10{fill:#060607;}.cls-11{fill:#070708;}.cls-12{fill:#fff;}.cls-13{fill:#060707;}.cls-14{fill:#131414;}.cls-15{fill:#141515;}.cls-16{fill:#070808;}</style></defs>
+
+			<g id="tensiondecorte"><path class="cls-1" d="M11.27,392.47a9.23,9.23,0,0,0-8,3c-.68.76-1.33,1.7-2.58.59s-.58-2,.23-3c3-3.55,6.57-6,11.52-5.92,6.22.09,12.42,0,18.63,0,1,0,2.72-.61,2.37,1.47-.23,1.56.14,3.72-2.45,3.76s-5,.12-7.53,0c-2-.1-3.11.42-3.55,2.62-1.32,6.72-2.9,13.39-4.33,20.11-.38,1.8-1,4,1.08,5s3.45-.63,4.87-1.83A18.36,18.36,0,0,0,23,416.9c.7-.72,1.32-.64,2,.06s.92,1.33.25,2.06c-2.94,3.12-6,6.08-10.74,5.91-3.77-.12-6-3-5.6-7.56a103.46,103.46,0,0,1,4.91-21.54C14.79,392.76,14.12,391.93,11.27,392.47Z" transform="translate(-0.04 -297.55)"/></g>
+			<g id="dudy" onclick="aparecer2()" ><path class="cls-2" d="M570.76,399.46c-.3,23-3.08,43.87-14.2,62.88a62.67,62.67,0,0,1-12.12,15.56c-.75.67-1.49,1.62-2.62.41-1-1-1.19-1.75-.11-3,11.83-13,16.78-29.13,19.29-46a189.73,189.73,0,0,0-.57-60.35c-2.72-15.64-7.73-30.44-18.65-42.6-1-1.1-1.18-1.81-.06-2.92,1.35-1.41,2.1-.24,2.92.5,7.19,6.52,11.94,14.71,16,23.39,5.92,12.61,8.57,26,9.4,39.79C570.32,391.73,570.91,396.32,570.76,399.46Z" transform="translate(-0.04 -297.55)"/><path class="cls-3" d="M411.08,400.78c.11-18.22,2-36.11,9.69-52.92,3.93-8.57,8.55-16.71,15.54-23.22,1-.88,1.82-3.11,3.76-1.08,1.64,1.71,0,2.5-.93,3.55-9.67,11.24-14.64,24.66-17.39,38.92a189.51,189.51,0,0,0-1.3,61.87c1.86,13.6,5.64,26.52,12.63,38.41a53.85,53.85,0,0,0,6.39,8.56c.92,1,1.93,1.85.56,3.3s-2.37.19-3.21-.64c-8.9-8.28-14.39-18.82-18.62-30C412.52,432.44,411.18,416.7,411.08,400.78Z" transform="translate(-0.04 -297.55)"/><path class="cls-4" d="M471.49,354.64c-2.19,2.37-4,4.65-6.13,6.59-3.23,2.93-7.1,4.35-11.32,2.63s-5.32-5.57-5.57-9.73a30.22,30.22,0,0,1,5.85-20.48c5-6.66,12.25-9.14,19.93-6.46,2.46.85,2.87.14,3.24-1.91.56-3.11,1.42-6.16,1.93-9.29.37-2.26.5-4.67-2.79-5-.75-.09-1.29-.32-1.19-1.19a1.26,1.26,0,0,1,1.38-1.11h0c3-.07,6.07-.22,9.1-.18,2.52,0,1.18,1.74,1,2.81q-4.64,21-9.32,42a8.51,8.51,0,0,0-.41,1.93c0,1.51-.72,3.37,1,4.35s3.2-.39,4.52-1.43a14,14,0,0,0,1.68-1.68,1.18,1.18,0,0,1,1.61-.43,1,1,0,0,1,.39.35c.79.72,1.18,1.44.22,2.31s-1.71,1.63-2.6,2.42c-2.9,2.57-6.15,4.57-10,2.81S471,358.32,471.49,354.64Z" transform="translate(-0.04 -297.55)"/><path class="cls-5" d="M472.33,468c-2.66,2.92-4.44,5.6-7,7.5-3.26,2.37-6.87,3.55-10.77,1.8-3.66-1.66-4.87-5-5.2-8.74a30.2,30.2,0,0,1,5.75-21.3c5-6.73,12.27-9.19,20-6.51,2.37.81,2.86.25,3.23-1.87.53-3.13,1.41-6.18,1.93-9.3.39-2.29.48-4.65-2.78-5-.7-.1-1.29-.36-1.13-1.19s.73-1,1.44-1.05c3-.08,6.08-.31,9.11-.19,2.51.09,1.11,1.83.87,2.89q-4.6,21-9.32,42.09a7.85,7.85,0,0,0-.37,1.93c0,1.51-.71,3.37,1.13,4.29s3-.35,4.23-1.38a14,14,0,0,0,1.69-1.66c.76-.86,1.45-1,2.29-.08.63.67.9,1.31.18,2-2.7,2.74-5.4,5.55-9.53,5.92-3.74.37-6.27-2.08-6.22-6A36.24,36.24,0,0,1,472.33,468Z" transform="translate(-0.04 -297.55)"/><path class="cls-5" d="M518.82,354.63c-1.87,2.05-3.42,3.82-5.07,5.51a13.57,13.57,0,0,1-7.46,4.21c-6.16,1-10.2-2.93-9.12-9.47.82-4.92,2.21-9.76,3.34-14.65.41-1.8.87-3.55,1.18-5.41.19-1.42.46-3.09-1.18-3.89-1.34-.66-2.44.45-3.65.92-1.58.63-2.37,4.63-4.4,2-1.85-2.37,1.74-3.35,3-4.74a10,10,0,0,1,3.64-2.29c5.49-2.23,9.16.33,9,6.27-.13,5.74-2.46,11-3.47,16.57a34.69,34.69,0,0,0-.68,5.07c0,1.67-.24,3.55,1.63,4.55,2.05,1.18,3.93.42,5.53-.83A24.12,24.12,0,0,0,520,345.25c1.29-5.12,2.37-10.29,3.55-15.39a4.83,4.83,0,0,1,6-3.22c.18.05.36.12.54.19,1.43.81.38,1.93.2,2.77-1.61,7.47-3.34,14.91-5,22.36a6.24,6.24,0,0,0-.38,1.53c0,2.13-1.48,4.88.94,6.18,2.19,1.18,3.79-1.1,5.31-2.53.87-.82,1.64-1.86,2.88-.44,1.08,1.18.11,1.93-.61,2.63-2,1.92-4,3.9-6.74,4.73-5.28,1.61-8.6-1-8.28-6.53C518.49,356.71,518.69,355.9,518.82,354.63Z" transform="translate(-0.04 -297.55)"/><path class="cls-6" d="M528.61,440.36h.79c5.45,0,5.77.5,3.55,5.72a158,158,0,0,1-16.56,29.58,93.83,93.83,0,0,1-11.48,14.12c-2.82,2.72-6,4.73-10.18,4.64-2.37,0-4-.45-2.74-3.4.45-1.07.46-2.36.82-3.45.6-1.79,2.47-1.81,3.06-.78,2.2,3.79,4.32,1.33,6.13,0,2.87-2.13,4.91-5.14,7.1-8a4.35,4.35,0,0,0,.49-3.79q-2.67-13.38-5.46-26.72c-.32-1.53-.64-3.35-2.37-3.84-2-.57-3.1,1-4.15,2.37-.75,1-1.36,2.1-2.8.91s-.15-2.12.5-2.92a19.25,19.25,0,0,1,3.33-3.36c4.93-3.64,10.08-2,11.73,3.81,2,7.24,2.8,14.74,4,22.15.12.71-.32,1.69.76,2s1.37-.53,1.79-1.18c3.85-6.32,7.49-12.72,8.82-20.12.41-2.26,1-4.54-1.94-5.6a1.06,1.06,0,0,1-.72-1.19c.12-.85.84-.9,1.5-.9h4Z" transform="translate(-0.04 -297.55)"/><path class="cls-7" d="M491.39,399.11H535c2.1,0,3.39,0,3.39,2.84s-1.08,2.89-3.27,2.89q-43.62-.09-87.26,0c-2,0-3.38.14-3.42-2.76,0-3.15,1.61-2.93,3.71-2.93Z" transform="translate(-0.04 -297.55)"/><path class="cls-8" d="M455.25,351.85c.34-5.92,1.37-11.29,4.36-16.14a14,14,0,0,1,4.52-4.88c2.6-1.57,5.44-2.36,8.22-.73s2.48,4.52,2.16,7.1c-1,7.89-3.41,15.17-9.65,20.6-1.85,1.62-4,2.66-6.53,1.68s-2.6-3.09-2.84-5.2C455.38,353.36,455.31,352.45,455.25,351.85Z" transform="translate(-0.04 -297.55)"/><path class="cls-9" d="M456.05,465.78c.27-6.13,1.33-11.63,4.4-16.57a13.59,13.59,0,0,1,4.91-5c2.56-1.41,5.33-2,7.91-.41s2.36,4.31,2,6.77c-.83,6.61-2.45,12.95-7,18.11a20.35,20.35,0,0,1-3.69,3.55c-4,2.73-7.44,1.18-8.2-3.64C456.23,467.47,456.13,466.43,456.05,465.78Z" transform="translate(-0.04 -297.55)"/></g>
+			<g id="tensioninicial" onclick="aparecer4()"><path class="cls-10" d="M163.62,387.14h9.47c1,0,2.74-.69,2.46,1.42-.2,1.56.18,3.72-2.37,3.8s-5.29.1-7.93,0c-1.68,0-2.72.37-3.1,2.18-1.46,7-3,13.9-4.49,20.85-.36,1.69-.74,3.69,1.1,4.64s3.24-.45,4.6-1.51c.41-.32.75-.75,1.18-1.1.74-.69,1.34-1.76,2.57-.56s.66,1.88-.24,2.65a37.55,37.55,0,0,1-4.91,4c-2.58,1.52-5.46,2.27-8.28.48s-3.06-4.83-2.64-7.77a129.7,129.7,0,0,1,5-20.75c.86-2.71.21-3.16-2.37-3.1-3.17.06-6,.6-8.28,3.07-.68.76-1.32,1.74-2.58.65s-.65-2,.16-3c3.12-3.74,6.82-6.18,11.92-5.92,2.9.11,5.81,0,8.71,0Z" transform="translate(-0.04 -297.55)"/><path class="cls-11" d="M205.51,421.88c-.28,4.43-.48,8.65-2.37,12.53a11.11,11.11,0,0,1-11.31,6.37,10.15,10.15,0,0,1-9.68-7.43,32.55,32.55,0,0,1-.2-19.84c1.94-6.33,6.3-9.37,12.27-9,5.55.35,9.4,4.1,10.57,10.52C205.2,417.35,205.3,419.8,205.51,421.88Z" transform="translate(-0.04 -297.55)"/><path class="cls-12" d="M199.56,422.92c0,3.55,0,7.1-1.18,10.58-.83,2.37-2.19,4.26-5,4.37a5.26,5.26,0,0,1-5.53-4.24,43,43,0,0,1-.2-21.93,5.29,5.29,0,0,1,5.4-4.43c2.79,0,4.19,2,5.06,4.31A32,32,0,0,1,199.56,422.92Z" transform="translate(-0.04 -297.55)"/></g>
+			<g id="plus"><path class="cls-13" d="M262.23,415.34c0,2.9-.12,5.81,0,8.71.12,2.2-.85,2.61-2.81,2.59s-2.9-.46-2.85-2.65c.13-5.28-.2-10.58.13-15.84.23-3.55-1.06-4.17-4.22-4-4.48.28-9,0-13.46.1-2,0-3.55.1-3.46-2.78,0-2.71,1.49-2.55,3.3-2.52,4.88,0,9.77-.12,14.65.07,2.36.08,3.25-.52,3.17-3-.19-5.41,0-10.83-.11-16.24-.07-2.37.68-3.13,3.11-3.19,2.75-.06,2.54,1.46,2.52,3.25,0,5.28.11,10.56,0,15.83-.08,2.54.57,3.55,3.28,3.39,4.88-.23,9.78,0,14.66-.09,2,0,3.55-.11,3.46,2.77,0,2.69-1.48,2.56-3.29,2.54-4.63,0-9.27.26-13.86-.1-3.68-.27-4.64,1.1-4.25,4.46A58.28,58.28,0,0,1,262.23,415.34Z" transform="translate(-0.04 -297.55)"/><path class="cls-7" d="M382,398.39c.69,2.8-.22,4.07-4.16,4.19-4.35.13-4.73-1.54-4.73-5.14s.75-5.13,4.73-4.73C382.61,393.11,381.84,392.05,382,398.39Z" transform="translate(-0.04 -297.55)"/><path class="cls-14" d="M88.24,407h21c1.81,0,3,.14,2.92,2.49s-.64,2.94-2.91,2.93q-21.15-.13-42.32,0c-2.09,0-2.71-.67-2.71-2.71s.61-2.74,2.7-2.71C74,407.05,81.12,407,88.24,407Z" transform="translate(-0.04 -297.55)"/><path class="cls-15" d="M88.23,390.92h20.63c1.79,0,3.3-.2,3.29,2.54,0,2.43-1,2.78-3.07,2.76q-21-.08-42,0c-1.89,0-2.86-.29-2.88-2.55s1-2.81,3-2.77C74.22,391,81.22,390.92,88.23,390.92Z" transform="translate(-0.04 -297.55)"/></g>
+			<g id="n"><path class="cls-16" d="M591.65,303.71c2.51-1.92,4.29-4.67,7.53-5.62,5.21-1.53,8.49.75,8.29,6.09-.2,4.92-1.87,9.55-2.83,14.33-.26,1.26-1.1,2.63.3,3.55s2.43-.15,3.55-.84,1.63-2.82,3.06-1.05-.82,2.43-1.69,3.27a11.13,11.13,0,0,1-3.65,2.36c-4.41,1.66-7.9-.95-7.24-5.64.56-3.89,1.91-7.67,2.56-11.56.39-2.37,1.94-5.41-1-6.81s-4.81,1.28-6.65,3.14c-3.91,3.91-4.23,9.22-5.51,14.2-.42,1.66-.68,3.36-1,5-.54,2.57-2.62,1.79-4.16,1.72-2.37-.11-1.31-1.9-1.09-3,1.18-5.67,2.58-11.31,3.81-17,.3-1.39.86-3.15-.5-4.07s-2.66.48-3.78,1.33c-.87.67-1.61,2.16-2.83.55-1-1.29.45-1.81,1-2.56a6.06,6.06,0,0,1,.89-.79C586.29,295.71,589.92,296.79,591.65,303.71Z" transform="translate(-0.04 -297.55)"/></g>
+			<g id="viscosidad" onclick="aparecer3()"><path class="cls-1" d="M335.28,418.61c-4.48,4.54-9.18,8.37-16.16,4.48a35,35,0,0,0,1.38,11.18,3.89,3.89,0,0,1-2.12,5.07l-.18.06c-3,1.47-4.44.68-4.44-2.63,0-15.47.06-30.94-.08-46.41,0-2.8,1-3.27,3.48-3.22s3.66.17,3.55,3.12c-.2,7.1-.11,14.27,0,21.42.08,5.92,1.94,8.48,6,8.55,4.39.1,8.7-4.05,8.89-9,.19-5.15,0-10.31,0-15.47v-4.35c-.08-2.44-.46-4.5,3.45-4.45,3.69,0,3.19,2,3.18,4.23V415c0,5.35.41,5.7,5.49,4.73a1.49,1.49,0,0,1,1.89.83c.62,1.18-.32,1.63-1,2.19C343.35,426.9,338.13,425.3,335.28,418.61Z" transform="translate(-0.04 -297.55)"/><rect class="cls-1" x="335.64" y="115.84" width="5.11" height="5.11"/></g>
+			</svg>
+
+	
+
+</div>
+<br>
+<br>
+<div id="in" class="row justify-content-center">
+<p>Apreta los componentes de la ecuación!</p>
+	</div>
+
+<div id="botones1">
+	<button id="pseudoplasticos" class="btn btn-primary btn-sm" onclick="pseudoplasticos()">Pseudoplásticos </button>
+	<button id="dilatantes" class="btn btn-primary btn-sm" onclick="dilatantes()">Dilatantes</button>
+	<button id="viscoplasticos" class="btn btn-primary btn-sm" onclick="viscoplasticos()">Viscoplásticos </button>
+
+</div>
+
+
+<div class="row padding">
+
+<div class="col-md-6">
+<div class="container-fluid padding" id="gif1">
+	<img src="img/gif1.gif" width="100%">
+</div>
+
+
+<div class="container-fluid padding" id="gifsegundo">
+
+	<div class="row padding">
+		<img src="img/gif2.gif">
+	</div>
+	<p>
+		
+
+
+	</p>
+	<div class="row padding">
+		<img src="img/gif3.gif">
+	</div>
+
+	<p>
+		
+	</p>
+
+	<div class="row padding">
+		<img src="img/gif4.gif">
+	</div>
+
+	<p>
+		
+	</p>
+</div>
+
+
+<div class="col-md-6"></div>
+<div class="container-fluid" id="giftercero">
+
+	<img src="img/gif5.gif">
+
+	<p>
+		
+
+
+	</p>
+	<img src="img/gif6.gif">
+
+</div>
+
+<div class="container-fluid" id="gifcuarto">
+
+	
+	<img src="img/gif7.gif">
+
+
+	</div>
+
+</div>
+
+
+<div id="tx0" class="col-md-6">
+	<p>
+
+	</p>
+	<p>
+
+La animación muestra el perfil de velocidades de un fluido entre dos placas paralelas. Se ve que al aplicarle una fuerza a la placa superior, esta adquiere una velocidad y se desplaza hacia la derecha, mientras que la placa inferior se mantiene en reposo. 
+	</p>
+	<p>
+Esto provoca que se forme un perfil uniforme de la velocidad del fluido, las partículas que están en contacto con la placa en movimiento, adquieren la misma velocidad que este, mientras que las partículas en contacto con la placa en reposo, también tienen velocidad igual a 0
+	</p>
+</div>
+<div id="tx1" class="col-md-6">
+	<p>
+Inicialmente se ven las partículas de ketchup en reposo, las cuales se encuentran distribuidas uniforme y aleatoriamente.
+Luego, se ve como chocan entre ellas tras aplicarles una pequeña fuerza muy rápido, la que no es suficiente para que se quiten del camino unas a otras, por lo que el ketchup no fluye.
+	</p>
+	<p></p>
+Finalmente, se observa la aplicación de una fuerza potente, muy rápidamente. Esta fuerza provoca que las partículas se aplasten y haya espacio suficiente para que algunas partículas pasen sobre otras y el ketchup pueda fluir.
+Si se le aplicara una fuerza muy débil pero por un largo período de tiempo, existen dos posibilidades
+	</p>
+
+	<p>
+	El segundo GIF muestra que las partículas se podrían reacomodar lentamente en grupos pequeños que pueden fluir unos sobre otros.Mientras que el otro muestra que las partículas en las paredes del contenedor se muevan lentamente hacia el medio, hasta que finalmente logran fluir y salir del contenedor
+	</p>
+</div>
+
+<div class="col-md-6" id="tx2">
+
+	<p>
+		Para los fluidos dilantantes, el ejemplo clásico es la mezcla de maicena y agua. A continuación se muestra qué es lo que sucede con sus partículas al aplicarle una fuerza débil y una fuerza potente.
+Las partículas de maicena son las más grandes y amarillas, mientras que las pequeñas y redondas son las partículas de agua.
+	</p>
+	<p>
+		En presencia de una fuerza débil, las partículas de maicena pueden deslizarse unas sobre otras porque las partículas de agua actúan como pequeñas bolas que ruedan.
+	</p>
+
+	<p>
+		Mientras que en presencia de una fuerza potente, las moléculas de agua son empujadas del medio de las partículas de maicena. Esto crea una superficie que es casi completamente de partículas de maicena, por lo que la solución se comportará como sólido. Por esa razón, golpearla con la mano es prácticamente lo mismo que golpear una superficie dura.
+	</p>
+</div>
+
+<div class="col-md-6" id="tx3">
+
+	<p>
+		En esta animación se observa el comportamiento de las partículas de un plástico ideal o de Bingham, también conocidos como viscoplásticos. Se muestra el ejemplo de una pasta de dientes, la cual se comporta como un sólido elástico hasta cierto esfuerzo de corte mínimo necesario para lograr que las partículas se desplacen unas a otras y el dentrífico fluya fuera del tubo.
+	</p>
+
+</div>
+
+</div>
+
+
+
+
+</div>
+</div>
+
+<div id="paginavis" class="container-fluid padding" >
+
+	<div class="row justify-content-center">
+
+	<div class="col-md-6">
+	<p><canvas id="fluids_canvas" width="690" height="400" style="background: #000000">
+		
+		</canvas>
+		
+	</p>
+
+	<p>
+		Viscosidad:
+		<input type="text" id="visc_val" onchange="setParamsFromUI();" />
+		&nbsp;&nbsp;&nbsp;&nbsp;
+
+		<input type="hidden" type="hidden" id="diff_val" onchange="setParamsFromUI();" />
+		&nbsp;&nbsp;&nbsp;&nbsp;
+
+		<input type="hidden" id="time_step" onchange="setParamsFromUI();" />
+	</p>
+	
+		<p>
+			<button id="viscosidad" class="btn btn-primary btn-sm" onclick="resetSim();">Resetear simulación </button>
+			<button id="viscosidad2" class="btn btn-secondary btn-sm" onclick="volver();">Volver </button>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+		</p>
+		<p>
+
+			<input type="hidden" name="act_select" id="action_dens_drag" onchange="setParamsFromUI();">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+
+			<input type="hidden" name="act_select" id="action_vel_drag" onchange="setParamsFromUI();">
+		</p>
+		<p>
+
+			<input type="hidden" id="show_grid" onchange="setParamsFromUI();" />
+			&nbsp;&nbsp;&nbsp;&nbsp;
+
+			<input type="hidden" id="show_vels" onchange="setParamsFromUI();" />
+			&nbsp;&nbsp;&nbsp;&nbsp;
+
+			<input type="hidden" id="show_stats" onchange="setParamsFromUI();" />
+		</p>
+
+		<p>
+
+			<input type="hidden" id="grid_cols" onchange="setParamsFromUI();" />
+			&nbsp;&nbsp;&nbsp;&nbsp;
+
+			<input type="hidden" id="grid_rows" onchange="setParamsFromUI();" />
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="hidden" id="solver_iters" onchange="setParamsFromUI();" />
+		</p>
+
+	</div>
+
+	<div class="col-md-6">
+		<img src="img/ins1.png" width="50%">
+		<img src="img/ins2.png" width="50%">
+	</div>
+	</div>	
+</div>
+
+<!--- Jumbotron -->
+
+
+<!--- Welcome Section -->
+
+
+<!--- Three Column Section -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Emoji Section -->
+
+
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Connect -->
+
+
+<!--- Footer -->
+
+
+
+
+</body>
+</html>
+
+
+
+<!-- End View in Browser: Drew's #1 Trending YouTube Tutorial -->

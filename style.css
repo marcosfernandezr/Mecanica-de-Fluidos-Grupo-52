@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins",sans-serif;
+  color: #222
+
+}
+
+.navbar{
+  padding: .8rem;
+    background-color: #000;
+
+}
+
+.navbar-nav li{
+  padding-right: 20px;
+}
+
+.nav-link{
+  font-size: 1em !important;
+}
+
+.carousel-inner img{
+  width: 100%;
+  height:100%;
+
+}
+
+#tx0{
+  display: none;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+#tx1{
+  display: none;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+#tx2{
+  display: none;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+#gifcuarto{
+  display: none;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+#tx3{
+  display: none;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+#giftercero{
+  display: none;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1{
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+  padding-bottom: 2rem;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem; 
+}
+
+.btn-primary{
+  background-color:#000;
+  color: #e4ff2a;
+  font-weight: 100;
+  border: 1px solid #000 ;
+}
+
+#ec{
+width: 30%;
+  margin: 0 auto;
+}
+
+#botones1{
+  display: none;
+  margin: 0 auto;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+#gifsegundo{
+  margin-top: 5%;
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+#gif3{
+  display: none;
+  margin: 0 auto;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+#bt2{
+  margin-left:0 auto;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+
+#gif1{
+  width: 100%;
+  margin: 0 auto;
+  animation-name: modalopen;
+	animation-duration: 1s;
+  }
+
+#dudy:hover path{
+  cursor: pointer;
+  fill: #e4ff2a ;
+}
+
+#tensioninicial:hover path{
+  cursor: pointer;
+  fill: #e4ff2a ;
+}
+
+#aaa{
+  animation-name: modalopen;
+	animation-duration: 1s;
+  
+}
+
+
+
+@keyframes highlight {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+
+#pagina2{
+  display: none;
+  margin-top: 5%;
+}
+
+#paginavis{
+  display: none;
+  margin-top: 1rem;
+  animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+#fluid_canvas{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#visc_val{
+  align-self: center;
+}
+#viscosidad{
+  align-self: center;
+}
+.btn-primary:hover{
+  background-color:#20211b;
+  border: 1px solid #000; 
+
+
+}
+
+#gif1{
+  display: none;
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .carousel-inner img{
+    width: 100%;
+    height:100%;
+  
+  }
+
+  }
+@media (max-width: 768px) {
+  .carousel-inner img{
+    width: 100%;
+    height:100%;
+  
+  }
+  
+}
+@media (max-width: 576px) {
+  .carousel-inner img{
+    width: 100%;
+    height:100%;
+  
+  }
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+.carousel{
+  width: 100%;
+  height: 100%;
+
+}
+
+.carousel-inner{
+  width: 100%;
+  height: 100%;
+
+}
+
+#paginaprincipal{animation-name: modalopen;
+  animation-duration: 1s;
+  width: 100%;
+  height: 100%;
+	}
+
+#pagina2{
+  display: none;
+	animation-name: modalopen;
+	animation-duration: 1s
+}
+#tercerapag{
+	animation-name: modalopen;
+	animation-duration: 1s
+}
+.hide{
+	animation-name: modalopen;
+	animation-duration: 1s
+}
+
+@keyframes modalopen{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+#referencias{
+
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
